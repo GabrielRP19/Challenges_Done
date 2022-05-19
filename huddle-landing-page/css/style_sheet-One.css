@@ -1,0 +1,395 @@
+/* LAYOUT DESKTOP */
+/* FONTES DO SITE*/
+
+@font-face {
+    font-family: Open-Sans;
+    src: url(../Fontes/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf)
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../Fontes/Poppins/Poppins-Bold.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    font-family:  Open-Sans, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ESTILOS DO HEADER */
+
+header {
+    background-image: url(../images/bg-hero-desktop.svg);
+    width: 1440px;
+    height: auto;
+    background-color: hsl(193, 100%, 96%);
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.logo {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.header_logo {
+    display: flex;
+    padding: 1em;
+}
+
+.box_layout {
+    display: flex;
+    align-items: center;
+    padding: 5em;
+}
+
+.box_text {
+    inline-size: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box_header h2 {
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.box_header p {
+    color: hsl(208, 11%, 55%);
+    font-size: 1em;
+    inline-size: -webkit-fill-available;
+    white-space: nowrap;
+    margin: 5% 0px;
+}
+
+
+/* ESTILO DO ARTICLE 1 */
+
+.container_article {
+    width: 1440px;
+}
+
+.card_component {
+    display: flex;
+    padding: 5em;
+    border-radius: 1em;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin: 1% 15%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+.box_article h2 {
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.box_article p {
+    color: hsl(208, 11%, 55%);
+    font-size: 1em;
+    inline-size: -webkit-fill-available;
+    white-space: nowrap;
+    margin: 5% 0px;
+}
+
+/* ESTILO DO ARTICLE 2*/
+
+.box_article-2 {
+    inline-size: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box_article-2 h2 {
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.box_article-2 p {
+    color: hsl(208, 11%, 55%);
+    font-size: 1em;
+    inline-size: -webkit-fill-available;
+    white-space: nowrap;
+    margin: 5% 0px;
+}
+
+/* ESTILO DO ARTICLE 3*/
+
+.card {
+    display: flex;
+    padding: 5em;
+    border-radius: 1em;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin: 10% 15%;
+    align-items: center;
+    width: 720px;
+    flex-direction: column;
+    background-color: #FFF;
+    z-index: 500;
+}
+
+.card h3 {
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+.card h3, p {
+    padding: 1em;
+}
+
+/* ESTILO DO FOOTER */
+
+.container_footer {
+    margin-top: -15%;
+    background-color: hsl(192, 100%, 9%);
+    width: 1440px;
+    color: #FFF;
+    cursor: url(../images/icone_luva.cur), default;
+}
+
+.container_footer a:hover {
+    text-decoration: underline;
+    cursor: url(../images/icone_luva.cur), default;
+}
+
+.footer_contents {
+    display: flex;
+    margin: 10% 0% 0% 10%;
+    padding-bottom: 5em;
+    align-items: center;
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 50px;
+}
+
+.box_footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.text_footer {
+    display: flex;
+    align-items: center;
+}
+
+#text_location {
+    display: block;
+}
+
+#text_location p {
+    padding: 0em 1em 1em 1em;
+}
+
+/* ESTILO DAS IMAGENS */
+
+.img {
+    width: 100%;
+}
+
+.box_img {
+    width: 35%;
+}
+
+.contents_icons {
+    white-space: nowrap;
+}
+
+.contents_icons svg {
+    width: 30px;
+    cursor: url(../images/icone_luva.cur), default;
+    margin: 0 1%;
+}
+
+svg:hover {
+    fill:#ff00dc;
+}
+
+
+.svg_image:hover, svg:hover{
+    fill:#ff00dc;
+    filter: inherit;
+}
+
+.img_footer img {
+    margin-bottom: 10%;
+}
+
+/* ESTILO DOS BOTÕES */
+
+.btn {
+    border-radius: 30px;
+    min-inline-size: max-content;
+    border-style: none;
+    padding: 1em 5em;
+    font-family:  Open-Sans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: url(../images/icone_luva.cur), default;
+}
+
+.btn-header {
+    background-color: #FFF;
+    color: hsl(192, 100%, 9%);
+}
+
+.btn-header:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.btn_box-text {
+    background-color: hsl(322, 100%, 66%);
+    color: #FFF;
+}
+
+.btn_box-text:hover {
+    cursor: url(../images/icone_luva.cur), default;
+    background-color: hsl(322, 100%, 66%,.5);
+}
+
+
+/* LAYOUT MOBILE */
+
+@media (max-width: 375px)
+{
+    body {
+        font-size: 9px;
+    }
+
+    header {
+        width: 375px;
+    }
+
+    .header_logo {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo img {
+        width: 92.5px;
+    }
+
+    .btn {
+        border-radius: 30px;
+        min-inline-size: max-content;
+        border-style: none;
+        padding: 10px 35px;
+        font-family: Open-Sans, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    .container_article {
+        width: 375px;
+    }
+
+    .container_footer {
+        width: 375px;
+    }
+
+    .box_layout {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .box_layout {
+        display: flex;
+        align-items: center;
+        padding: 0em;
+        flex-direction: column;
+    }
+
+    .box_text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .box_img {
+        width: 185.5px;
+        padding: 0em 1em 5em 1em;
+    }
+
+    .img_header {
+        margin: 20px 0px;
+    }
+
+    .card_component {
+        display: flex;
+        padding: 5em 1em;
+        border-radius: 1em;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        margin: 5% 15%;
+        background-color: #FFF;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        display: flex;
+        padding: 5em;
+        border-radius: 1em;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        align-items: center;
+        width: 360px;
+        flex-direction: column;
+        background-color: #FFF;
+        z-index: 500;
+    }
+
+    .footer_contents {
+        display: flex;
+        padding: 0em;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 0;
+    }
+
+    .box_footer {
+        display: flex;
+        padding-left: 1em;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .img_footer img {
+        width: 185.5px;
+        padding: 15px;
+    }
+
+    .contents_icons {
+        white-space: nowrap;
+        display: flex;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contents_icons svg {
+        width: 50px;
+        /* cursor: url(../images/icone_luva.cur), default; */
+    }
+}

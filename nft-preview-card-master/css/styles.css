@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2? family= Outfit:wght@600 & display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: hsl(217, 54%, 11%);
+    color: #FFF;
+    padding: 5%;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* ESTILOS DO CARD */
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1em;
+    width: 375px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* ESTILO DAS IMAGENS */
+
+.img_equil {
+    border-radius: 10%;
+    height: auto;
+    padding: 5%;
+    width: 375px;
+}
+
+.header_img {
+    display: inline-block;
+    position: relative;
+}
+  
+.header_img:hover::after {
+    visibility: visible;
+}
+
+.header_img::after {
+    background: url(../images/icon-view.svg) no-repeat, hsl(178, 100%, 50%,.5);
+    background-position: 45% 55%;
+    content: '';
+    display: block;
+    height: 89%;
+    border-radius: 5%;
+    cursor: pointer;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    visibility: hidden;
+    width: 90%;
+}
+
+.img_footer img {
+    width: 10%;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+/* ESTILOS DOS TEXTOS */
+
+.text_title {
+    margin-left: 5%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.text_title h3 {
+    font-family: 'Outfit', system-ui;
+    padding: 2.5% 0%;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.text_title h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.text_title p {
+    font-family: 'Outfit', system-ui;
+    padding: 2.5% 0%;
+    padding-bottom: 5%;
+    font-weight: 300;
+}
+
+.text_paragraph {
+    display: flex;
+    font-family: 'Outfit', system-ui;
+    padding: 2.5% 5.5%;
+    padding-bottom: 5%;
+    font-weight: 400;
+    justify-content: space-between;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.img_footer {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    justify-content: flex-start;
+}
+
+.img_footer p {
+    font-family: 'Outfit', system-ui;
+    margin-left: 10px;
+}
+
+.phr_1 {
+    font-weight: 600;
+    color: hsl(215, 51%, 70%);
+}
+
+.phr_2 {
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.phr_2:hover {
+    color: hsl(178, 100%, 50%);
+}
